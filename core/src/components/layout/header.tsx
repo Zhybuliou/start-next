@@ -1,7 +1,8 @@
+"use client"
 import React from "react";
 import Navbar from "../navBar";
 import { Button } from "../ui/button";
-import Image from "next/image";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function Header() {
   return (
@@ -12,15 +13,13 @@ export default function Header() {
         <Button
           className="w-[235px] h-[60px]
          bg-primary04 text-primary03 
-         hover:text-primary05
+         hover:bg-primary01
+         transition-color duration-300 ease-in-out	
          rounded-full flex justify-between pl-[10px]"
         >
-          <Image
-            src="/icons/tel.png"
-            width={45}
-            height={45}
-            alt="icon telephone"
-          />
+          <div className="h-[45px] w-[45px] p-2 rounded-full bg-primary01">
+              <DotLottieReact src="7.lottie" loop autoplay style={{ opacity: 0.5}} />
+          </div>
           <p className="text-button">+ (888) 452 1505</p>
         </Button>
       </div>

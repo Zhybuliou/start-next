@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Link from "next/link";
 import React from "react";
@@ -19,17 +19,17 @@ export default function AboutUs() {
             Get help from Alex Moore, a professional business coach with
             advanced experience on growth and business scaling.
           </p>
-          <div >
+          <div>
             <Link href="/">
-             <div className="h-[45px] w-[45px] rounded-full bg-primary02">
+              <div className="h-[50px] w-[50px] rounded-full bg-primary02">
               <DotLottieReact src="mail.lottie" loop autoplay />
               </div>
             </Link>
           </div>
           <div>
             <Link href="/">
-             <div className="h-[45px] w-[45px] rounded-full bg-primary02">
-              <DotLottieReact src="telefon.lottie" loop autoplay />
+              <div className="h-[50px] w-[50px] p-2 rounded-full bg-primary02">
+              <DotLottieReact src="7.lottie" loop autoplay style={{ opacity: 0.5}} />
               </div>
             </Link>
           </div>
