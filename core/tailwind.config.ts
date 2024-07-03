@@ -1,11 +1,13 @@
-import type { Config } from "tailwindcss"
-const { fontFamily } = require("tailwindcss/defaultTheme")
+import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config = {
   darkMode: ["class"],
   content: [
-    './src/**/*.{ts,tsx}',
-	],
+    "./src/**/*.{ts,tsx}",
+    "./@/components/**/*.{ts,tsx}",
+    "./@/components/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,8 +21,95 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      fontSize: {
+        heading01: [
+          "50px",
+          {
+            lineHeight: "130%",
+            letterSpacing: "0%",
+            fontWeight: "600",
+          },
+        ],
+        "heading-02": [
+          "45px",
+          {
+            lineHeight: "130%",
+            letterSpacing: "0%",
+            fontWeight: "600",
+          },
+        ],
+        "heading-03": [
+          "40px",
+          {
+            lineHeight: "130%",
+            letterSpacing: "0%",
+            fontWeight: "600",
+          },
+        ],
+        "heading-04": [
+          "35px",
+          {
+            lineHeight: "130%",
+            letterSpacing: "0%",
+            fontWeight: "600",
+          },
+        ],
+        "heading-05": [
+          "30px",
+          {
+            lineHeight: "130%",
+            letterSpacing: "0%",
+            fontWeight: "600",
+          },
+        ],
+        "heading-06": [
+          "25px",
+          {
+            lineHeight: "130%",
+            letterSpacing: "0%",
+            fontWeight: "600",
+          },
+        ],
+        paragraph: [
+          "16px",
+          {
+            lineHeight: "147.5%",
+            letterSpacing: "0%",
+            fontWeight: "400",
+          },
+        ],
+        quotes: [
+          "32px",
+          {
+            lineHeight: "140%",
+            letterSpacing: "0%",
+            fontWeight: "400",
+          },
+        ],
+        button: [
+          "18px",
+          {
+            lineHeight: "160%",
+            letterSpacing: "0%",
+            fontWeight: "600",
+          },
+        ],
+        navbar: [
+          "18px",
+          {
+            lineHeight: "160%",
+            letterSpacing: "0%",
+            fontWeight: "400",
+          },
+        ],
+      },
       colors: {
         border: "hsl(var(--border))",
+        primary01: "#FFCC4A",
+        primary02: "rgb(78, 175, 78)",
+        primary03: "rgb(24, 24, 24)",
+        primary04: "rgb(245, 245, 245)",
+        primary05: "rgb(228, 228, 228)",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -58,6 +147,7 @@ const config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        button: "42px",
       },
       keyframes: {
         "accordion-down": {
@@ -76,6 +166,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
