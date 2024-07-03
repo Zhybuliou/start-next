@@ -6,7 +6,8 @@ const config = {
   content: [
     "./src/**/*.{ts,tsx}",
     "./@/components/**/*.{ts,tsx}",
-    "./@/components/**/*.{ts,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   prefix: "",
   theme: {
@@ -18,6 +19,11 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'my_bg_image' : "url('/background/gray.png')",
+        'my_bg_yellow' : "url('/background/yellow.png')",
+        'my_bg_black' : "url('/background/download.png')",
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
