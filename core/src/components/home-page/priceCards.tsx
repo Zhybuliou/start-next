@@ -2,9 +2,37 @@ import React from "react";
 import PriceCard from "./priceCard";
 
 const dataPrices = [
-    { id: 1, text: ['24/7 system monitoring', 'Security management','Secure finance backup','Secure finance backup'] }, 
-    { id: 2, text: ['24/7 system monitoring', '24/7 system monitoring', 'Security management','Secure finance backup','Secure finance backup'] },
-    { id: 3, text: ['24/7 system monitoring', '24/7 system monitoring','24/7 system monitoring', 'Security management','Secure finance backup','Secure finance backup'] }];
+  {
+    id: 1,
+    text: [
+      "24/7 system monitoring",
+      "Security management",
+      "Secure finance backup",
+      "Secure finance backup",
+    ],
+  },
+  {
+    id: 2,
+    text: [
+      "24/7 system monitoring",
+      "24/7 system monitoring",
+      "Security management",
+      "Secure finance backup",
+      "Secure finance backup",
+    ],
+  },
+  {
+    id: 3,
+    text: [
+      "24/7 system monitoring",
+      "24/7 system monitoring",
+      "24/7 system monitoring",
+      "Security management",
+      "Secure finance backup",
+      "Secure finance backup",
+    ],
+  },
+];
 
 export default function PriceCards() {
   return (
