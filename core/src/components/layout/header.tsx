@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Navbar from "../navBar";
 import { Button } from "../ui/button";
@@ -18,7 +18,12 @@ export default function Header() {
          rounded-full flex justify-between pl-[10px]"
         >
           <div className="h-[45px] w-[45px] p-2 rounded-full bg-primary01">
-              <DotLottieReact src="7.lottie" loop autoplay style={{ opacity: 0.5}} />
+            <DotLottieReact
+              src="7.lottie"
+              loop
+              autoplay
+              style={{ opacity: 0.5 }}
+            />
           </div>
           <p className="text-button">+ (888) 452 1505</p>
         </Button>

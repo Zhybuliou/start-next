@@ -23,6 +23,7 @@ const config = {
         my_bg_image: "url('/background/gray.png')",
         my_bg_yellow: "url('/background/yellow.png')",
         my_bg_black: "url('/background/download.png')",
+        my_bg_dots: "url('/icons/noise.png')",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],

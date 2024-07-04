@@ -6,7 +6,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function HelloSection() {
   return (
-    <section className="h-[642px] bg-primary03 flex justify-center">
+    <section className="h-[642px] bg-primary03 bg-my_bg_dots flex justify-center">
       <div className="w-[1200px] h-[100%] flex relative">
         <Image
           className="absolute top-20 lg:left-[40%] md:right-0 sm:right-0"

@@ -18,12 +18,7 @@ export default function ServiceCard({
         "w-[320px] h-[440px] bg-primary04 rounded-[20px] shadow-xl relative"
       }
     >
-      <Image
-        className="rounded-[20px]"
-        src={`${url}`}
-        layout="fill"
-        alt="image"
-      />
+      <Image className="rounded-[20px]" src={`${url}`} fill alt="image" />
       <div className="z-100 absolute pl-3 pr-3 top-[200px]">
         <h3 className={`text-heading-06 text-${color}`}>{title}</h3>
         <p className={`text-paragraph text-${color}`}>{text}</p>
