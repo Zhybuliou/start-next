@@ -13,7 +13,7 @@ const Navbar = () => {
   const isActive = (path: string) => path === pathname;
 
   return (
-    <nav>
+    <nav className="lg:block hidden">
       <ul className="flex text-navbar">
         {NavLinks.map((link) => {
           return (

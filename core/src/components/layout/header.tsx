@@ -3,19 +3,21 @@ import React from "react";
 import Navbar from "../navBar";
 import { Button } from "../ui/button";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Burger from "../home-page/burger";
 
 export default function Header() {
   return (
-    <div className="h-[100px] flex justify-center items-center ">
-      <div className="h-[60px] w-[1200px] flex items-center justify-between">
+    <div className="min-h-[100px] flex justify-center items-center">
+      <div className="min-h-[60px] max-w-[1200px] w-[100%] flex items-center justify-between flex-wrap p-2 pr-5">
         <div className="w-[182px] text-heading-05">Logo</div>
         <Navbar />
+        <Burger />
         <Button
-          className="w-[235px] h-[60px]
+          className="lg:flex hidden w-[235px] h-[60px]
          bg-primary04 text-primary03 
          hover:bg-primary01
          transition-color duration-300 ease-in-out	
-         rounded-full flex justify-between pl-[10px]"
+         rounded-full justify-between pl-[10px]"
         >
           <div className="h-[45px] w-[45px] p-2 rounded-full bg-primary01">
             <DotLottieReact

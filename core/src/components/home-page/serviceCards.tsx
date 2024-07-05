@@ -35,7 +35,7 @@ const dataCard: DataCard[] = [
 export default function ServiceCards() {
   return (
     <div className="flex justify-center mt-[-60px]">
-      <div className="w-[1000px] flex justify-between">
+      <div className="w-[100%] flex justify-center flex-wrap">
         {dataCard.map((el) => (
           <ServiceCard
             color={el.color}

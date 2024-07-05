@@ -36,7 +36,7 @@ const dataPrices = [
 
 export default function PriceCards() {
   return (
-    <div className="flex mt-[20px] justify-center">
+    <div className="flex mt-[20px] justify-center flex-wrap">
       {dataPrices.map((el) => (
         <PriceCard key={el.id} values={el} />
       ))}
