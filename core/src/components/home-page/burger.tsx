@@ -18,10 +18,13 @@ export default function Burger() {
   </SheetTrigger>
   <SheetContent className='bg-primary01 sm:max-w-sm'>
     <SheetHeader>
-      <SheetTitle>Are you absolutely sure?</SheetTitle>
-      <SheetDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
+      <SheetTitle><h2 className='text-heading-05 mt-2'>Logo</h2></SheetTitle>
+      <SheetDescription >
+        <ul className='mt-5'>
+          <li className='text-button'>Home</li>
+          <li className='text-button'>About</li>
+          <li className='text-button'>Contact</li>
+        </ul>
       </SheetDescription>
     </SheetHeader>
   </SheetContent>

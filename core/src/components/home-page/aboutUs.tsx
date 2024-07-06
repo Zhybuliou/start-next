@@ -8,7 +8,7 @@ import InfoBadge from "./infoBadge";
 export default function AboutUs() {
   return (
     <section className="flex justify-center">
-      <div className="w-[1200px] mt-[100px] flex">
+      <div className="max-w-[1200px] w-[100%] mt-[100px] flex p-2">
         <div className="w-[40%]">
           <span className="w-[130px] bg-primary01 pl-4 pr-4 rounded-button uppercase text-paragraph">
             About Me
