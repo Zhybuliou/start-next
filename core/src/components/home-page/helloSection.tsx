@@ -10,7 +10,7 @@ export default function HelloSection() {
       <div className="w-[1200px] h-[100%] flex relative overflow-hidden">
         <Image
           className="absolute lg:top-20 lg:left-[40%] top-[-150px]"
-          src="/icons/pattern.png"
+          src={"/icons/Pattern.png"}
           width={320}
           height={320}
           alt="icon pattern"

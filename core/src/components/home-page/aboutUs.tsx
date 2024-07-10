@@ -62,7 +62,7 @@ export default function AboutUs() {
         <div className="w-[620px] relative sm:block hidden">
           <Image
             className="absolute left-4 bottom-0 z-0"
-            src="/icons/pattern.png"
+            src={"/icons/Pattern.png"}
             width={300}
             height={300}
             alt="icon pattern"
