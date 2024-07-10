@@ -13,7 +13,7 @@ const dataCard: DataCard[] = [
     id: 1,
     color: "primary03",
     url: "/background/gray.png",
-    title: "Finance & Restructuring",
+    title: "Finance",
     text: "Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.",
   },
   {
