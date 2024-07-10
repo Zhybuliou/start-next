@@ -8,8 +8,8 @@ import InfoBadge from "./infoBadge";
 export default function AboutUs() {
   return (
     <section className="flex justify-center">
-      <div className="max-w-[1200px] w-[100%] mt-[100px] flex p-2">
-        <div className="w-[40%]">
+      <div className="max-w-[1200px] w-[100%] mt-[100px] flex p-2 flex-wrap justify-center">
+        <div className="max-w-[480px] w-[100%] mb-4">
           <span className="w-[130px] bg-primary01 pl-4 pr-4 rounded-button uppercase text-paragraph">
             About Me
           </span>
@@ -59,7 +59,7 @@ export default function AboutUs() {
             <p className="text-button ">Make An Appointment</p>
           </Link>
         </div>
-        <div className="w-[60%] relative">
+        <div className="w-[620px] relative">
           <Image
             className="absolute left-4 bottom-0 z-0"
             src="/icons/pattern.png"
@@ -70,7 +70,7 @@ export default function AboutUs() {
           <div className="z-10 relative top-10 h-[600px]">
             <DotLottieReact src="e1.lottie" loop autoplay />
           </div>
-          <InfoBadge className="absolute top-0 right-0 w-[447px] h-[258px]" />
+          <InfoBadge className="absolute top-0 right-0 max-w-[447px] w-[100%] h-[258px]" />
         </div>
       </div>
     </section>

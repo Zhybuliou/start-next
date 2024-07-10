@@ -6,21 +6,21 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function HelloSection() {
   return (
-    <section className="h-[642px] bg-primary03 bg-my_bg_dots flex justify-center">
-      <div className="w-[1200px] h-[100%] flex relative">
+    <section className="lg:h-[642px] h-[600px] bg-primary03 bg-my_bg_dots flex lg:justify-center justify-between">
+      <div className="w-[1200px] h-[100%] flex relative overflow-hidden">
         <Image
-          className="absolute top-20 lg:left-[40%] md:right-0 sm:right-0"
+          className="absolute lg:top-20 lg:left-[40%] top-[-150px]"
           src="/icons/pattern.png"
           width={320}
           height={320}
           alt="icon pattern"
         />
-        <div className="w-[50%] h-[100%] flex items-center">
-          <div className="w-[508px] h-[315px] flex flex-col justify-between z-10">
+        <div className="lg:w-[50%] w-[100%] h-[100%] flex items-center">
+          <div className="w-[508px] h-[315px] flex flex-col justify-between z-10 ml-4">
             <span className="w-[130px] bg-primary01 pl-4 pr-4 rounded-button uppercase text-paragraph">
               Hello’ i Am
             </span>
-            <h1 className="text-primary05 text-heading01">
+            <h1 className="text-primary05 lg:text-heading-01 text-heading-04">
               Adam Buschemia Business Consultant
             </h1>
             <p className="text-primary05 text-paragraph">
@@ -28,7 +28,7 @@ export default function HelloSection() {
               advanced experience on growth and business scaling.
             </p>
             <Button
-              className=" h-[60px] w-[210px]
+              className=" h-[60px] w-[210px] mt-8
          bg-primary04 text-primary03 
          hover:text-primary05
          rounded-full flex justify-between pl-[10px]"
@@ -43,7 +43,7 @@ export default function HelloSection() {
             </Button>
           </div>
         </div>
-        <div className="w-[50%] h-[100%] z-10">
+        <div className="w-[50%] h-[100%] z-10 lg:block hidden">
           <DotLottieReact src="1.lottie" loop autoplay />
         </div>
       </div>

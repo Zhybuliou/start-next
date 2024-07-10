@@ -40,7 +40,7 @@ const config = {
         "heading-02": [
           "45px",
           {
-            lineHeight: "130%",
+            lineHeight: "120%",
             letterSpacing: "0%",
             fontWeight: "600",
           },
