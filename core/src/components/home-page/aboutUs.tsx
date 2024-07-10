@@ -70,7 +70,7 @@ export default function AboutUs() {
           <div className="z-10 relative top-10 h-[600px]">
             <DotLottieReact src="e1.lottie" loop autoplay />
           </div>
-          <InfoBadge className="absolute top-0 right-0 max-w-[447px] w-[100%] h-[258px]" />
+          <InfoBadge className="absolute top-0 right-0 max-w-[447px] w-[100%] h-[258px] overflow-scroll" />
         </div>
       </div>
     </section>
