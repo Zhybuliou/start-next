@@ -13,7 +13,7 @@ export default function Counter({
   duration: number;
 }) {
   return (
-    <CountUp start={start} end={end} duration={duration}>
+    <CountUp start={start} end={end} duration={duration} enableScrollSpy>
       {({ countUpRef }) => (
         <div className={className}>
           <span ref={countUpRef} />
