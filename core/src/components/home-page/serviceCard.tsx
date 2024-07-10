@@ -15,7 +15,7 @@ export default function ServiceCard({
   return (
     <div
       className={
-        "mr-4 mb-4 w-[320px] h-[440px] bg-primary04 rounded-[20px] shadow-xl relative"
+        "sm:ml-4 mb-3 w-[300px] h-[440px] bg-primary04 rounded-[20px] shadow-xl relative"
       }
     >
       <Image className="rounded-[20px]" src={`${url}`} fill alt="image" />

@@ -14,7 +14,7 @@ const dataProject = [
 
 export default function ProjectsCards() {
   return (
-    <div className="flex mt-[20px] justify-between flex-wrap">
+    <div className="flex mt-[20px] flex-wrap justify-center">
       {dataProject.map((el) => (
         <ProjectsCard url={el.url} key={el.id} />
       ))}

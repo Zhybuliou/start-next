@@ -11,7 +11,7 @@ type CardData = {
 export default function PriceCard({ values }: { values: CardData }) {
   const { id, text } = values;
   return (
-    <div className="w-[320px] h-[580px] bg-white shadow-xl rounded-[20px] ml-2 mr-2 p-4">
+    <div className="w-[310px] h-[580px] bg-white shadow-xl rounded-[20px] ml-2 mr-2 mb-4 p-4">
       <div className="h-[234px] bg-primary03 rounded-[20px] relative overflow-hidden p-6">
         <Image
           className="absolute right-6 top-[-30px]"

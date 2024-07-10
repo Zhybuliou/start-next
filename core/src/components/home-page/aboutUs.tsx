@@ -8,12 +8,12 @@ import InfoBadge from "./infoBadge";
 export default function AboutUs() {
   return (
     <section className="flex justify-center">
-      <div className="max-w-[1200px] w-[100%] mt-[100px] flex p-2 flex-wrap justify-center">
+      <div className="max-w-[1200px] w-[100%] sm:mt-[100px] flex p-4 flex-wrap justify-center">
         <div className="max-w-[480px] w-[100%] mb-4">
           <span className="w-[130px] bg-primary01 pl-4 pr-4 rounded-button uppercase text-paragraph">
             About Me
           </span>
-          <h3 className="text-heading-02">About our Consuting Agency Team</h3>
+          <h3 className="sm:text-heading-02 text-heading-03">About our Consuting Agency Team</h3>
           <p className="text-paragraph text-primary02 mt-[20px]">
             We create experiences and build products that make business grow
           </p>
@@ -59,7 +59,7 @@ export default function AboutUs() {
             <p className="text-button ">Make An Appointment</p>
           </Link>
         </div>
-        <div className="w-[620px] relative">
+        <div className="w-[620px] relative sm:block hidden">
           <Image
             className="absolute left-4 bottom-0 z-0"
             src="/icons/pattern.png"

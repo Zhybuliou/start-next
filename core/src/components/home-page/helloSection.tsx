@@ -16,7 +16,7 @@ export default function HelloSection() {
           alt="icon pattern"
         />
         <div className="lg:w-[50%] w-[100%] h-[100%] flex items-center">
-          <div className="w-[508px] h-[315px] flex flex-col justify-between z-10 ml-4">
+          <div className="max-w-[508px] w-[100%] h-[315px] flex flex-col justify-between z-10 ml-4">
             <span className="w-[130px] bg-primary01 pl-4 pr-4 rounded-button uppercase text-paragraph">
               Hello’ i Am
             </span>
