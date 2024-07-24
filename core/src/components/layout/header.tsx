@@ -4,6 +4,7 @@ import Navbar from "../navBar";
 import { Button } from "../ui/button";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Burger from "../home-page/burger";
+import LangBar from "../langBar";
 
 export default function Header() {
   return (
@@ -11,6 +12,7 @@ export default function Header() {
       <div className="min-h-[60px] max-w-[1200px] w-[100%] flex items-center justify-between flex-wrap p-2 pr-5">
         <div className="w-[182px] text-heading-05">Logo</div>
         <Navbar />
+        <LangBar />
         <Burger />
         <Button
           className="lg:flex hidden w-[235px] h-[60px]

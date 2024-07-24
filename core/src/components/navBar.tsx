@@ -3,16 +3,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NavLinks = [
-  { id: 1, name: "Home", path: "" },
-  { id: 2, name: "Blog", path: "/blog" },
-  { id: 3, name: "About", path: "/about" },
+  { id: 1, name: "Home", nameT: "Главная", path: "" },
+  { id: 2, name: "Blog", nameT: "Блог", path: "/blog" },
+  { id: 3, name: "About", nameT: "О нас", path: "/about" },
 ];
 
 const Navbar = () => {
   const pathname = usePathname();
   const isActive = (path: string) => path === pathname;
   const langPrefix = pathname.slice(0,3);
-  console.log(pathname)
 
   return (
     <nav className="lg:block hidden">
@@ -28,7 +27,7 @@ const Navbar = () => {
                     : "flex items-center before:inline-block before:w-2 before:h-2 before:mr-1 ml-[36px] before:border-primary03 before:border-2 before:rounded-full"
                 }
               >
-                {link.name}
+                {langPrefix === "/en" ? link.name : link.nameT}
               </Link>
             </li>
           );

@@ -3,8 +3,10 @@ import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import {useTranslations} from 'next-intl';
 
 export default function HelloSection() {
+  const t = useTranslations('helloSection');
   return (
     <section className="lg:h-[642px] h-[600px] bg-primary03 bg-my_bg_dots flex lg:justify-center justify-between">
       <div className="w-[1200px] h-[100%] flex relative overflow-hidden">
@@ -21,7 +23,7 @@ export default function HelloSection() {
               Hello’ i Am
             </span>
             <h1 className="text-primary05 lg:text-heading-01 text-heading-04">
-              Adam Buschemia Business Consultant
+            {t('title')}
             </h1>
             <p className="text-primary05 text-paragraph">
               Get help from Alex Moore, a professional business coach with
